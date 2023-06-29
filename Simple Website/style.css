@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/* html {
+    font-size: 62.5%;
+} */
+.hero{
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar {
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navbar-img {
+    width: 60px;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    cursor: pointer;
+    filter: invert(1);
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.navbar ul li a:after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #54b3d6;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform .4s;
+    border-radius: 80px;
+}
+
+.navbar ul li a:hover:after {
+    transform: none;
+    transform-origin: 0 0;
+}
+
+.main-content {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    color: #fff;
+    width: 100%;
+
+    /* transform:translate(50%);  */
+}
+
+.main-text{
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.main-text h1{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.main-actions{
+    max-width: 400px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+
+}
+
+.main-actions a{
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #54b3d6;
+    border-radius: 25px;
+    padding: 10px 30px;
+}
+
+.main-actions a {
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #54b3d6;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.main-actions a:hover {
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #54b3d6;;
+  }
+
